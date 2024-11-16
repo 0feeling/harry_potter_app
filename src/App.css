@@ -1,3 +1,7 @@
+body {
+  font-family: 'Metal Mania', cursive;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,15 @@
     transform: rotate(360deg);
   }
 }
+
+.CharactersContainer {
+  display: flex;
+}
+
+.headerContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+

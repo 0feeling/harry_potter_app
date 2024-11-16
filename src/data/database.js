@@ -1,4 +1,4 @@
-const apiAnswer = [
+export const apiAnswer = [
   {
     name: "Harry Potter",
     image: "https://ik.imagekit.io/hpapi/harry.jpg",
@@ -16,3 +16,5 @@ const apiAnswer = [
     image: "https://ik.imagekit.io/hpapi/mcgonagall.jpg",
   },
 ];
+
+export default apiAnswer;

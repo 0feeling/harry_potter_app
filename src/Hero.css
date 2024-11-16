@@ -1,0 +1,15 @@
+.HeroContainer {
+  background-image: url(./images/assets/salle-de-classe.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  margin-top: 0px; /* Ajoute de l'espace avec le header */
+  color: rgba(255, 217, 0, 0.918);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
