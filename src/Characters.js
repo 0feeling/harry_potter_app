@@ -1,37 +1,19 @@
 import './Characters.css';
-import Card from "./Card.js";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import Card from './Card.js';
 
-const Characters = (props) => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null); // State pour gérer les erreurs
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://hp-api.herokuapp.com/api/characters"
-        );
-        setData(response.data);
-      } catch (err) {
-        console.error("Erreur lors de la récupération des données :", err);
-        setError("Impossible de récupérer les données, veuillez réessayer.");
-      }
-    };
-    fetchData();
-  }, []);
-
+const Characters = ({ characters, openModal }) => {
   return (
     <div className="CharactersContainer">
-      {error ? (
-        <div className="error-message">{error}</div> // Affichage du message d'erreur
-      ) : data ? (
-        data.map((character) => (
-          <Card key={character.name} character={character} />
+      {characters.length > 0 ? (
+        characters.map((character) => (
+          <Card 
+            key={character.name} 
+            character={character} 
+            openModal={openModal} // Pass the openModal function as a prop
+          />
         ))
       ) : (
-        <div>En attente</div>
+        <div>Aucun personnage trouvé.</div>
       )}
     </div>
   );

@@ -6,13 +6,20 @@
   padding: 20px;
   justify-items: center;
   background-color: #ffffff;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
+  background-image: url("https://science.nasa.gov/wp-content/uploads/2023/04/hubble_ngc2031-jpg.webp?w=1280&format=webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Assure-toi que l'image est derrière les autres éléments */
+  border-top: solid #f1c40f;
 }
 
 /* Style de la carte (Card) */
 .card {
   background-color: rgb(0, 0, 0);
   border-radius: 15px; /* Coins arrondis */
+  border: solid #f1c40f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée pour un effet flottant */
   width: 100%;
   max-width: 250px; /* Largeur maximale pour garder la carte proportionnée */
@@ -33,16 +40,18 @@
   height: 300px;
   object-fit: cover; 
   border-bottom: 2px solid #f1c40f; 
+  
 }
 
 /* Légende avec le nom du personnage */
 .legend {
-  padding: 10px;
+  padding: 0px;
   font-size: 1.1rem;
   font-weight: bold;
   border-bottom: 2px solid #f1c40f; 
   color: #f1c40f;
   background-color: #000000; 
+  
  
 }
 

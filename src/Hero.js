@@ -3,7 +3,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="HeroContainer">
-      <div>Your Favourite Harry Potter Characters in one Click</div>
+      <div>Discover Your Favorite Harry Potter Characters with One Click</div>
     </div>
   );
 };

@@ -1,0 +1,50 @@
+/* Style général de la barre de recherche */
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: url("https://img.20mn.fr/nKLp1zGoSDqoXO79gXAeyA/722x460_image-contient-265000-galaxies");
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #f1c40f;
+  font-family: 'Metal Mania', cursive; /* Police inspirée de Harry Potter */
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #8e44ad; /* Couleur magique pour le focus */
+  box-shadow: 0 0 10px rgba(142, 68, 173, 0.6);
+}
+
+.search-button {
+  background-color: #f1c40f;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: 'Metal Mania', cursive;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #8e44ad; /* Couleur magique pour le hover */
+  color: white;
+}
+
+.search-button:active {
+  transform: scale(0.98);
+}

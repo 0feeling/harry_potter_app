@@ -41,9 +41,6 @@ body {
   }
 }
 
-.CharactersContainer {
-  display: flex;
-}
 
 .headerContainer {
   align-items: center;
